@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+/*<default>*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Fredoka One',sans-serif;
+    font-weight: lighter;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color:#222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color:#222;
+}
+h4{
+    font-family: 'Maven Pro',sans-serif;
+    font-size: 20px;
+    
+    color:rgb(65, 65, 65);
+}
+h6{
+    font-family: 'Maven Pro',sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-family: 'Maven Pro',sans-serif;
+    font-size: 16px;
+    color: #3e3e3e;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+button.normal{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+button.normal a{
+    border: none;
+    outline: none;
+}
+body{
+    background-color:#f0f8ff;
+    width: 100%;
+}
+/*</default>*/
+
+/*<icon>*/
+#header .material-symbols-outlined {
+    font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 48
+}
+footer .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 40
+}
+#logo{
+    width : 120px;
+    height : 60px;
+}
+/*<icon>*/
+
+/*<Header>*/
+
+#header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px 50px 20px 60px;
+    background-color: aliceblue;
+    box-shadow: 0 5px 15px rgba(36, 34, 34, 0.3);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size:18px;
+    font-weight:lighter;
+    color:#7c7c7c;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,#navbar li a.active{
+    color:#E2A301;
+}
+
+#navbar li #lbl.active::after,#navbar li #lbl:hover::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background: #E2A301;
+    position:absolute;
+    bottom: -8px;
+    left:20px;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+
+/*</header>*/
+
+
+/*<footer>*/
+footer{
+    background-color: aliceblue;
+}
+footer .before-cop{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+}
+footer .copyright{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+footer .adress{
+    display: flex;
+    align-items: center;
+}
+footer .phone{
+    display: flex;
+    align-items: center;
+}
+footer .couriel{
+    display: flex;
+    align-items: center;
+}
+footer #logo{
+    margin-bottom: 7px;
+}
+footer h4{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 7px;
+}
+footer a{
+    font-family: 'Maven Pro',sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+footer p{
+    font-size: 13px;
+}
+footer .payment img{
+    width: 200px;
+}
+footer .icon-social .icon{
+    margin: 10px 5px;
+    color: #535353;
+}
+footer .icon-social #fb:hover{
+    color: #4267B2;
+}
+footer .icon-social #tw:hover{
+    color: #1DA1F2;
+}
+footer .icon-social #in:hover{
+    color: #bc2a8d;
+}
+footer .icon-social #pi:hover{
+    color: #E60023;
+}
+footer .icon-social #yo:hover{
+    color: #FF0000;
+}
+/*</footer>*/
+
+
+/*
+Index page
+
+*/
+
+/* high */
+#high{
+    background-image: url("../img/surprised.jpg");
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;  
+}
+
+#high h4{
+    padding-bottom: 15px;
+}
+
+#high h1{
+    color: #1b3d65;
+    padding-bottom: 15px;
+}
+
+/*<button for high>*/
+#button{
+    position: relative;
+    display: inline-flex;
+    width: 100px;
+    height: 55px;
+    perspective: 1000px;
+  }
+  #button a{
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  #button a:before,
+  #button a:after{
+    position: absolute;
+    content: "J'ACHETE MAINTENANT";
+    height: 55px;
+    width: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  #button a:before{
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  #button a:after{
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  #button a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+  }
+
+/*</button>*/
+
+
+
+/*<products-categories>*/
+
+#products-categories{
+    text-align: center;
+    margin: 50px 0;
+}
+#products-categories .pro-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#products-categories .pro{
+    background-color: aliceblue;
+    width: 25%;
+    height: auto;
+    min-width: 250px;
+    padding: 10px 12px;
+    margin: 15px 10px;
+    border: 1px solid rgb(168, 164, 175);
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(213, 211, 255, 0.02);
+    transition: 0.2s ease;
+}
+#products-categories .pro:hover{
+    transform: scale(0.95, 0.95);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#products-categories .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+/* #products-categories h2{
+    font-family: 'Maven Pro',sans-serif;
+} */
+#products-categories h4{
+    color: #7c7c7c;
+}
+#products-categories .des button:hover{
+    background-color:#B8E6F3 ;
+    padding: 15px 35px 15px 35px;
+    transition: 0.2s;
+}
+/*</products-categories>*/
+
+
+
+/*<feature>*/
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #b9cae2;
+}
+.fe-img{
+    width: auto;
+    height: 100px;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    margin:15px 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid #cccce7;
+    border-radius: 4px;
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+/*</feature>*/
+
+/*banner*/
+#banner-prom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../img/laughing-trendy-lady-sitting-on-bicycle-and-waving-hand-portrait-of-adorable-caucasian-female-bicyclist.jpg");
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner-prom h4{
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner-prom h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner-prom h2 span{
+    color: brown;
+}
+
+#banner-prom button:hover{
+    background-color:#B8E6F3 ;
+    padding: 15px 35px 15px 35px;
+    transition: 0.2s;
+}
+
+
+/*<sm-banner>*/
+
+#sm-banner{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#sm-banner .banner1{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-image: url("../img/magnificent-woman-in-long-bright-skirt-dancing-in-studio-carefree-inspired-female-model-posing-with-pleasure-on-yellow.jpg");
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 15px;
+    
+}
+/*</sm-banner>*/
+
+
+/*<newsletter>*/
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../img/15410.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #041e42;
+}
+#newsletter h4{
+    font-size: 25px;
+    font-weight: 700;
+    color:#fff;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color:#818ea0;
+}
+#newsletter span{
+    font-size: 14px;
+    font-weight: 600;
+    color:#E2A301;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+#newsletter input{
+    font-family: 'Open Sans',sans-serif;
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: white;
+}
+#newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#newsletter button:hover{
+    background-color:#087069;
+}
+/*</newsletter*/
+
+/*
+Ending index page
+*/
+
+
+
+
+
+/*
+Starting Shop page
+*/
+
+#shop-high{
+    background-image: url("../img/the-girl-holds-fashion-shopping-bag-and-beauty.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#shop-high h2,#shop-high h4{
+    padding: 14px;
+    color: #222;
+}
+
+/*
+Ending Shop page
+*/
+
+/*
+Starting about page
+*/
+
+#about-high{
+    background-image: url("../img/grunge-paint-background.jpg");
+    height: 40vh;
+    width: 100%;
+    background-size:cover;
+    background-position: top 50% right 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#about-high h2{
+    color:rgb(40, 50, 70);
+}
+#about-high h4{
+    color:rgb(40, 50, 70);
+}
+#about-shopi{
+    background-color: #f7fafd;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#about-shopi img{
+    background-color: #fff;
+    width: 30%;
+    height: auto;
+    border: 1px solid#b9cae2;
+    border-radius:20px ;
+    box-shadow: 0 5px 15px rgba(36, 34, 34, 0.3);
+    padding: 20px;
+}
+
+/*
+Ending about page
+*/
+
+
+/*Media Query*/
+
+@media (max-width:799px) {
+    h1{
+        font-size: 46px;
+        line-height: 64px;
+        color:#222;
+    }
+    h2{
+        font-size: 42px;
+        line-height: 54px;
+        color:#222;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 250px;
+        background-color: rgb(247, 250, 253);
+        opacity: 0.8;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 100px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar.active{
+        right: 0;
+    }
+    #high h4{
+        padding-bottom: 15px;
+        color: #fff;
+    }
+    
+    #high h2{
+        color: #fff;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile #icon{
+        color: #E2A301;
+    }
+    #mobile #mobile-bar{
+        font-weight:200 ;
+        color: rgb(80, 80, 80);;
+        margin-left: 45px;
+    }
+    #high{
+        background-image: url("../img/surprised.jpg");
+        height: 95vh;
+        width: 100%;
+        background-size: cover;
+        background-position: top 25% right 0%;
+        padding: 0 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;  
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #high{
+        height: 100vh;
+        background-position: top 30% right 30%;
+        padding: 0 75px;
+    }
+    #button a:before,#button a:after{
+    height: 55px;
+    width: 250px;
+  }
+  #newsletter .form {
+    display: flex;
+    width: 100%;
+}
+}
+
+/*Media Query*/

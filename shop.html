@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopi - index</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img id="logo" src="assets/img/Shopi logo 2.png" ></a>
+
+        <div>
+            <ul id="navbar">
+                <li>
+                    <a id="lbl" href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a id="lbl" class="active" href="shop.html">Shop</a>
+                </li>
+                <li>
+                    <a id="lbl" href="promotion.html">Promotion</a>
+                </li>
+                <li>
+                    <a id="lbl" href="about.html">À propos</a>
+                </li>
+                <li>
+                    <a id="lbl" href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a id="icon" href="cart.html">
+                        <span id="lg-bag" class="material-symbols-outlined">
+                            shopping_bag
+                        </span>
+                    </a>
+                </li>
+                <span id="close" class="material-symbols-outlined" onclick="closeClicked()">
+                    close
+                </span>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a id="icon" href="assets/child-link/cart.html">
+                <span class="material-symbols-outlined">
+                    shopping_bag
+                </span>
+            </a>
+            <i id="mobile-bar" class="fa-solid fa-outdent fa-xl" onclick="barClicked()"></i>
+        </div>
+    </section>
+
+    <section id="shop-high">
+        <h2>#stayhome</h2>
+        <h4>Restez chez vous, la livraison est gratuite.</h4>
+    </section>
+
+    <section id="products-categories" class="section-p1">
+        <h4>Une large gamme de produits</h4>
+        <h2>NOS PRODUITS</h2>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="assets/img/pink-sweater-front.jpg" alt="">
+                <div class="des">
+                    <p>Sweat</p>
+                    <button class="normal">ALLER</button>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="assets/img/chaussure1.jpg" alt="">
+                <div class="des">
+                    <p>Tennis</p>
+                    <button class="normal">ALLER</button>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="assets/img/portefeuille.jpg" alt="">
+                <div class="des">
+                    <p>Pochette</p>
+                    <button class="normal">ALLER</button>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="assets/img/high-angle-lipsticks-assortment.jpg" alt="">
+                <div class="des">
+                    <p>Maquillage</p>
+                    <button class="normal">ALLER</button>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="assets/img/elegant-watch-with-silver-and-golden-chain-isolated.jpg" alt="">
+                <div class="des">
+                    <p>Montre</p>
+                    <button class="normal">ALLER</button>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="assets/img/beautiful-elegance-and-luxury-fashion-pink-women-handbag.jpg" alt="">
+                <div class="des">
+                    <p>Sac à main</p>
+                    <button class="normal">ALLER</button>
+                </div>
+            </div>
+        </div>
+        <h4>Et plus encore !</h4>
+    </section>
+
+
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>Inscrivez-vous à ShoPi</h4>
+            <p>Recevez toujours un mail afin de ne pas manquer <span>les nouveautés et offres spéciales</span>.</p>
+        </div>
+        <div class="form">
+            <input type="email" name="" id="" placeholder="Votre adresse mail">
+            <button class="normal">S'inscrire</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        
+        <div class="before-cop">
+            <div class="col">
+                <img id="logo" src="assets/img/Shopi logo 2.png" alt="">
+                <h4>Contact</h4>
+                <div class="adress">
+                    <span class="material-symbols-outlined">
+                        home_pin
+                    </span>
+                    <p>III R 5B Bis Tsimbazaza Tsarafaritra, Antananarivo 101, Madagascar</p>
+                </div>
+                <div class="phone">
+                    <span class="material-symbols-outlined">
+                        smartphone
+                    </span>
+                    <p>+261 34 94 125 00 | +261 34 94 125 09</p>
+                </div>
+                <div class="couriel">
+                    <span class="material-symbols-outlined">
+                        home_pin
+                    </span>
+                    <p>contact@shopi.com</p>
+                </div>
+            </div>
+            <div class="col">
+                <h4>À propos</h4>
+                <a href="#">À propos de nous</a>
+                <a href="#">Information de livraison</a>
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Termes & Conditions</a>
+                <h4>Aide</h4>
+                <a href="#">Assistance</a>
+            </div>
+            <div class="col">
+                <div class="payment">
+                    <h4>Paiement sécurisé</h4>
+                    <img src="assets/img/payement.png" alt="">
+                </div>
+                <div class="follow">
+                    <h4>Suivez-nous</h4>
+                    <div class="icon-social">
+                        <i id="fb" class="fa-brands fa-facebook-f fa-xl icon"></i>
+                        <i id="tw" class="fa-brands fa-twitter fa-xl icon"></i>
+                        <i id="in" class="fa-brands fa-instagram fa-xl icon"></i>
+                        <i id="pi" class="fa-brands fa-pinterest-p fa-xl icon"></i>
+                        <i id="yo" class="fa-brands fa-youtube fa-xl icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2022 ShoPi, Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
