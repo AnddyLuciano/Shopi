@@ -1,1 +1,1 @@
-E-commerce website using HTML, CSS, Javascript
+ShoPi: E-commerce website using HTML, CSS, Javascript
